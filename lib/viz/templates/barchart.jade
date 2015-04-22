@@ -1,0 +1,10 @@
+table(border=1)
+	tr
+		td(colspan=data.length) 
+			svg(width=w, height=h)
+				each r in data
+					rect(width=r.width, height=r.height, x = r.x, y = h-r.height, fill=r.color )
+	tr
+		each r in data
+			td
+				p=r.height_origin
