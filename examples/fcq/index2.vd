@@ -1,0 +1,48 @@
+# FCQ Data Analysis for 2014
+
+```
+var data = loader.json('examples/fcq/fcq.2014.json', {multiLines: true})
+var fields = _.keys(data[0]).join(', ')
+```
+
+
+
+
+###Create a scatterplot to show the relationship between avg course rating and number of student enrolled
+```  
+var students = _.pluck(data, 'N_ENROLL')
+var avg_courses = _.pluck(data, 'AvgCourse')
+
+
+var arr = [];
+for (i=0;i<students.length;i++)
+{
+    arr[i]=[students[i], avg_courses[i]]
+}
+
+
+viz.scatterplot(arr.slice(0,500),5)
+```
+###Shows a VTK 
+```  
+var students = _.pluck(data, 'N_ENROLL')
+var avg_courses = _.pluck(data, 'AvgCourse')
+
+
+var arr = [];
+for (i=0;i<students.length;i++)
+{
+    arr[i]=[students[i], avg_courses[i]]
+}
+
+
+viz.scatterplot(arr.slice(0,500),5)
+```
+
+###Shows html
+```
+viz.display('glass_brain.png')
+viz.display('glass_brain2.png')
+viz.display('glass_brain3.png')
+
+```
