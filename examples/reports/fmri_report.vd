@@ -1,0 +1,71 @@
+# Are Social Networks Training the Mind for Multitasking? - 3 Subject Profile Report
+
+#Overview
+The study hypothesizes that improvement gained in multitasking abilities was not achieved by diverting the task away from the prefrontal cortex but by speeding up the processing of information. 
+
+### Report on Subject A4256 , B3680, C1923
+
+###Description: This report will provide a visual short hand for three subjects in our study to help visualize the activity in the brain while multitasking. 
+
+Brain Slice Location: Image 1
+
+###Code to show brain images
+```
+viz.display('glass_brain.png')
+
+```
+###Description
+Here is a visualization to help to understand the relative location of the brain slices we will be viewing. 
+
+###Subject A4256: Brain Image 
+
+###Code to show brain images
+```
+viz.display('brain1.jpg')
+
+```
+###Description
+Here the subject appears to be diverting the brain activity away from the pre-frontal cortex to other areas of the brain. These findings do not support our hypothesis.  
+
+###Subject B3680: Brain Image 
+
+###Code to show brain images
+```
+viz.display('brain4.jpg')
+
+```
+###Description
+Here there is clear brain activity concentrated in the prefrontal cortex. This supports our hypothesis.
+
+###Subject C1923: Brain Image 
+
+###Code to show brain images
+```
+viz.display('brain3.jpg')
+
+```
+###Description
+Here there is also clear brain activity concentrated in the prefrontal cortex. This also supports our hypothesis.
+
+
+
+###Creates a scatterplot to show Two-dimensional probabilistic hypercube views of data. Red circles show patients using social-network training, black circles show patients not using social-network training. 
+``` 
+var data = [[0.1,0.1], [0.15, 0.15], [0.2,0.2], [0.3,0.3], [0.4, 0.4], [0.5, 0.5], [0.4, 0.8], [0.6, 0.7] , [0.4, 0.7], [0.3, 0.5], [0.2, 0.6], [0.2, 0.7], [0.18,0.18], [0.135, 0.135], [0.25,0.2], [0.38,0.3], [0.45, 0.4], [0.51, 0.59], [0.42, 0.89], [0.65, 0.71] , [0.45, 0.78], [0.39, 0.5], [0.21, 0.66], [0.28, 0.7], [0.45, 0.45], [0.65, 0.65] , [0.48, 0.48], [0.33, 0.35], [0.23, 0.23], [0.27, 0.27], [0.38,0.38], [0.145, 0.145], [0.25,0.25], [0.38,0.38], [0.45, 0.48], [0.59, 0.59], [0.42, 0.42], [0.71, 0.71] , [0.478, 0.478], [0.39, 0.39], [0.66, 0.66], [0.28, 0.289]] 
+viz.scatterplot(data, 300)
+```
+###Shows a barchart Depicting the relative activity in different regions of the brain for subject A4256. 
+###BLUE - Prefrontal cortex
+###RED - Parahippocampal
+###YELOW - Lingual
+###GREEN - Cuneus
+###PURPLE - Anterior Cingulate
+###ORANGE - Frontal pole
+```  
+var data = [10, 8, 9 , 5, 4, 8] 
+
+viz.barchart(data, 250)
+```
+###Summary and Conclusion
+Two of the subjects show activity in the prefrontal cortex while multi-tasking. The other subject shows activity being diverted from the prefrontal cortex to other areas of the brain, contradicting our hypothesis. There still needs to be further scanning of more subjects but this provides some evidence that activity remains in the prefrontal cortex.
+
